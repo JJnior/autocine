@@ -1,0 +1,64 @@
+@charset "UTF-8";
+body {
+            background-color: #282c34; /* Fondo oscuro */
+            color: #ffffff; /* Texto blanco */
+        }
+
+        .carousel-inner img {
+            height: 500px; /* Ajuste de altura del carrusel */
+            object-fit: cover; /* Mantener la proporción de la imagen */
+        }
+
+        .header-title {
+            background-color: #c0392b; /* Rojo oscuro */
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #c0392b; /* Rojo oscuro para el título */
+        }
+
+        .card {
+            background-color: #4c545b; /* Color de fondo de las tarjetas */
+            border: none;
+            transition: transform 0.2s; /* Efecto al pasar el ratón */
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff; /* Texto de la tarjeta */
+        }
+
+        .btn-success {
+            background-color: #c0392b; /* Rojo oscuro */
+            border: none;
+        }
+
+        .btn-success:hover {
+            background-color: #a93226; /* Rojo más oscuro al pasar el ratón */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Aumentar el tamaño de la tarjeta al pasar el ratón */
+        }
+
+.carousel-inner img {
+    height: 500px; /* Ajuste de altura del carrusel */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card {
+    transition: transform 0.2s; /* Efecto al pasar el ratón */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumentar el tamaño de la tarjeta al pasar el ratón */
+}

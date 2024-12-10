@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th=" http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" th:href="@{/css/styles.css}">
+<title>Descripción</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-left: 33%">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" th:href="@{/}">AutoCine</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	      <div class="navbar-nav">
+	        <a class="nav-link active" aria-current="page" th:href="@{/peliculas}">CARTELERA</a>
+	        <a class="nav-link" th:href="@{/chocolateria}">CHOCOLATERIA</a>
+	        <a class="nav-link" href="#">SOCIO</a>
+	        <a class="nav-link disabled" aria-disabled="true">SOBRE NOSOTROS</a>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+	
+    <main class="container">
+        <div class="movie-info">
+            <h2 th:text="${pelicula.nombre}" class="movie-title"></h2>
+            <p th:text="'Sinopsis: ' + ${pelicula.descripcion}" class="movie-description"></p>
+            <div class="movie-details">
+                <p th:text="'Duración: ' + ${pelicula.duracion} + ' minutos'" class="detail"></p>
+                <p th:text="'Precio: $' + ${pelicula.precio}" class="detail"></p>
+                <p th:text="'Categoría: ' + ${pelicula.categoria}" class="detail"></p>
+            </div>
+
+            <div class="cinema-location">
+                <label for="location">Selecciona un lugar:</label>
+                <select id="location">
+                    <option value="costa-verde">Costa Verde</option>
+                    <option value="parque-leyendas">El Parque de las Leyendas</option>
+                </select>
+            </div>
+
+            <div class="showtimes">
+                <h3>Horarios:</h3>
+                <div class="button-group">
+                    <button class="showtime-button">1:00 PM</button>
+                    <button class="showtime-button">3:30 PM</button>
+                    <button class="showtime-button">6:00 PM</button>
+                    <button class="showtime-button">8:30 PM</button>
+                    <button class="showtime-button">11:00 PM</button>
+                </div>
+            </div>
+            <div class="seat-selection">
+                <button class="select-seats-button">Seleccionar Asientos</button>
+            </div>
+        </div>
+        <img th:src="${pelicula.ruta}" class="movie-image" alt="Poster de la película">
+    </main>
+    <footer class="footer">
+        <p>© 2024 AutoCine el cine del Futuro. Todos los derechos reservados.</p>
+    </footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

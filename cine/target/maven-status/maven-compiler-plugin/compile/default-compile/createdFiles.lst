@@ -1,0 +1,9 @@
+net\autocine\cine\service\PeliculaServiceImplement.class
+net\autocine\cine\controller\InicioController.class
+net\autocine\cine\repository\PeliculaRepository.class
+net\autocine\cine\model\ChocoModel.class
+net\autocine\cine\model\PeliculaModel.class
+net\autocine\cine\controller\MostrarPelicula.class
+net\autocine\cine\controller\PeliculaController.class
+net\autocine\cine\CineApplication.class
+net\autocine\cine\service\PeliculaService.class

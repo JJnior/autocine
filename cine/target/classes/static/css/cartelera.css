@@ -1,0 +1,46 @@
+@charset "UTF-8";
+body {
+    background-color: #282c34; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+.header {
+    background-color: #c0392b; /* Rojo oscuro */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ffffff; /* Color del subtítulo */
+    font-size: 36px; /* Tamaño del título */
+}
+
+.card {
+    background-color: #4c545b; /* Color de fondo de las tarjetas */
+    border: none;
+    transition: transform 0.2s; /* Efecto al pasar el ratón */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c0392b; /* Color del título */
+}
+
+.card-text {
+    color: #ffffff; /* Color del texto */
+}
+
+.card-img {
+    height: 200px; /* Altura de la imagen */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+}
+
+.container {
+    margin-top: 20px; /* Espaciado superior */
+}
