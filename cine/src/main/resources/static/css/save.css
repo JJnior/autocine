@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* Estilos Generales */
+body {
+    background-color: #282c34;
+    /* Fondo oscuro */
+    color: #ffffff;
+    /* Texto blanco */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de la barra de navegación */
+nav {
+    background-color: #333;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #c0392b;
+    /* Rojo oscuro para el título */
+    margin-bottom: 30px;
+}
+
+/* Estilo para el contenedor del formulario */
+.form-container {
+    background-color: #4c545b;
+    /* Color de fondo de las tarjetas */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    /* Añadir margen superior para separar el formulario del menú */
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+    /* Etiquetas en blanco */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="url"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #2e343b;
+    /* Fondo de los campos */
+    color: #ffffff;
+    /* Texto blanco en los campos */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+    border-color: #c0392b;
+    /* Rojo oscuro al hacer foco */
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input[type="submit"] {
+    background-color: #c0392b;
+    /* Rojo oscuro */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    /* Transición de color */
+}
+
+input[type="submit"]:hover {
+    background-color: #a93226;
+    /* Rojo más oscuro al pasar el ratón */
+}

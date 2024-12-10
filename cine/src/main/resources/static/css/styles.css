@@ -1,0 +1,123 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.header-title {
+    text-align: center;
+    padding: 20px;
+    background-color: #c0392b; /* Rojo oscuro */
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 60px; /* Espacio para el footer */
+}
+
+.movie-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 400px;
+}
+
+.movie-image {
+    width: 250px;
+    height: 370px;
+    margin-left: 20px;
+}
+
+.movie-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.movie-description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.movie-details {
+    margin-top: 15px;
+}
+
+.detail {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.cinema-location {
+    margin-top: 20px;
+}
+
+.cinema-location label {
+    margin-right: 10px;
+}
+
+.showtimes {
+    margin-top: 20px;
+}
+
+.showtimes h3 {
+    margin: 10px 0;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.showtime-button {
+    background-color: #7f8c8d; /* Color gris */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.showtime-button:hover {
+    background-color: #95a5a6; /* Color gris más claro */
+}
+
+.seat-selection {
+    margin-top: 20px;
+}
+
+.select-seats-button {
+    background-color: #c0392b; /* Rojo oscuro */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.select-seats-button:hover {
+    background-color: #a93226; /* Rojo más oscuro */
+}
+
+.footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
